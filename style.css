@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+
+        --color-primary: #2dd4bf;  /* Fresh teal */
+        --color-danger: #fb7185;   /* Soft coral red */
+        --color-success: #4ade80;  /* Vibrant green */
+        --color-warning: #fbbf24;  /* Amber yellow */
+        --color-white: #fff;
+        --color-info-dark: #475569; /* Slate blue-gray */
+        --color-info-light: #e2e8f0; /* Light slate */
+        --color-dark: #334155;     /* Dark slate */
+        --color-light: rgba(45, 212, 191, 0.1); /* Teal tint */
+        --color-primary-variant: #0d9488; /* Dark teal */
+        --color-dark-variant: #475569;    /* Slate gray */
+        --color-background: #f8fafc;      /* Off-white */
+    
+        /* ... rest of your existing variables ... */
+    
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light)
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background:var(--color-info-light);
+    font-family: Poppins , sans-serif;
+}
+.all_element{
+    display: grid;
+    grid-template-columns: 10rem  auto;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+.card{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    margin-top: 2.5rem;
+    border-radius:
+var(--card-border-radius);
+    background:var(--color-primary);
+    -webkit-border-radius: var( --card-border-radius: 2rem);
+    -moz-border-radius: var( --card-border-radius: 2rem);
+    -ms-border-radius: var( --card-border-radius: 2rem);
+    -o-border-radius: var( --card-border-radius: 2rem);
+}
+.container .card .avar ,.container .card .ivar,.container .card .year{
+    width: 80%;
+    font-size: 20px;
+    height: 4.5rem;
+    margin: 1.5rem;
+    background: var(--color-info-light);
+    border-radius: 25px 25px 25px 25px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+    -moz-border-radius: 25px 25px 25px 25px;
+    -ms-border-radius: 25px 25px 25px 25px;
+    -o-border-radius: 25px 25px 25px 25px;
+
+}
+.container.card .year{
+    text-align: center;
+}
+.container .card .avar ,.container .card .ivar,.container .card .year ::placeholder{
+    text-align: center;
+}
+.container .card .btn{
+    width: 30%;
+    text-align: center;
+    height: 3rem;
+    border-radius: var(--border-radius-1);
+    -webkit-border-radius: var(--border-radius-1);
+    -moz-border-radius: var(--border-radius-1);
+    -ms-border-radius: var(--border-radius-1);
+    -o-border-radius: var(--border-radius-1);
+    font-size: 20px;
+    margin: 1rem;
+}
+.container .card h1{
+   padding: 4rem;
+   background: var(--color-dark-variant);
+   text-align: center;
+   border-radius:var(--card-border-radius) ;
+   -webkit-border-radius:var(--card-border-radius) ;
+   -moz-border-radius:var(--card-border-radius) ;
+   -ms-border-radius:var(--card-border-radius) ;
+   -o-border-radius:var(--card-border-radius) ;
+}
+/*-----------end of card-------------*/
+.side_bar .aside{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+   /* justify-content: center;*/
+    align-items: flex-start;
+    height: 100%;
+    width: 15rem;
+    background-color: var(--color-dark-variant);
+}
+.side_bar .aside a{
+/*    padding: 1rem;
+font-size: 18px;
+text-decoration: none;
+align-self: center;*/
+display: flex;
+    color: var(--color-primary);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+
+
+}
+.side_bar .aside h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    padding: 0.5rem;
+
+}
